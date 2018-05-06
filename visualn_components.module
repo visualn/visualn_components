@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains visualn_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function visualn_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the visualn_components module.
+    case 'help.page.visualn_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom installer for components and their integration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualn_components_theme($existing, $type, $theme, $path) {
+
+  // Register drawer components theme hooks so that templates could be used
+  // by drawers and overridden by developers if needed
+  $items = [];
+
+  // @todo: check component directory for hook implementations
+
+
+  return $items;
+}

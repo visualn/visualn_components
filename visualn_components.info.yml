@@ -1,0 +1,5 @@
+name: VisualN Components
+type: module
+description: Custom installer for components and their integration
+core: 8.x
+package: VisualN

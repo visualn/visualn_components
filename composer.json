@@ -1,0 +1,21 @@
+{
+  "name": "drupal/visualn_components",
+  "type": "drupal-module",
+  "description": "Custom installer for components and their integration",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/visualn_components",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/visualn_components",
+    "source": "http://cgit.drupalcode.org/visualn_components"
+  },
+  "require": {
+    "davidbarratt/custom-installer": "^1.0@alpha"
+  },
+  "extra": {
+    "custom-installer": {
+      "components/{$vendor}/{$name}": ["type:drupal-custom-component"]
+    }
+  }
+}
